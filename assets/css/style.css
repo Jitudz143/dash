@@ -10,6 +10,7 @@ body {
 
 .show_sidebar {
     width: 0px !important;
+    min-width: 0 !important;
     opacity: 0;
     visibility: hidden;
 }
@@ -24,7 +25,8 @@ body {
     height: 100vh;
     background: #37474F;
     overflow: hidden;
-    width: 250px;
+    min-width: 230px;
+    width: 16vw;
     opacity: 1;
     visibility: visible;
     -webkit-transition: 0.3s ease;
@@ -57,7 +59,7 @@ body {
     margin-top: 10px;
     overflow-y: auto;
     max-height: 90vh;
-    width: 250px !important;
+    min-width: 230px;
 }
 
 .nav::-webkit-scrollbar {
