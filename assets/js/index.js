@@ -17,9 +17,24 @@ $(document).ready(function () {
     $('#close-alert').click(function(){
         $('.alert').removeClass('show');
     })
-    setTimeout(() => {
-        $('.alert').removeClass('show');
-    }, 5000);
+    // setTimeout(() => {
+    //     $('.alert').removeClass('show');
+    // }, 5000);
 
-    $('.alert').addClass('show');
+    // $('.alert').addClass('show');
+    
+    function showNotification(msg, type=0, autoHide = false) {
+        let msgType = type > 0? 'alert-warning':'alert-success';
+        let msg1 = type > 0? '<strong>Error!</strong> ':'<strong>Success!</strong> ';
+        $('.alert').addClass('show');
+        $('.alert').addClass(msgType);
+        $('#alert-message').html(msg1+msg);
+
+        if (autoHide) {
+            setTimeout(() => {
+                $('.alert').removeClass('show');
+            }, 5000);
+        }
+    }
+    showNotification('You should check in on some of those fields below.',1,true)
 })
