@@ -13,4 +13,13 @@ $(document).ready(function () {
 
     // Call this to close alert
     // $('.alert').alert('close');
+    
+    $('#close-alert').click(function(){
+        $('.alert').removeClass('show');
+    })
+    setTimeout(() => {
+        $('.alert').removeClass('show');
+    }, 3500);
+
+    $('.alert').addClass('show');
 })
