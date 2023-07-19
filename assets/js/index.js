@@ -36,5 +36,5 @@ $(document).ready(function () {
             }, 5000);
         }
     }
-    showNotification('You should check in on some of those fields below.',1,true)
+    showNotification('You should check in on some of those fields below.',0,true)
 })
