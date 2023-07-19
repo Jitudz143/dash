@@ -19,7 +19,7 @@ $(document).ready(function () {
     })
     setTimeout(() => {
         $('.alert').removeClass('show');
-    }, 3500);
+    }, 5000);
 
     $('.alert').addClass('show');
 })
